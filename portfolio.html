@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Editkaro.in</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Editkaro.in Logo">
+                <h1>Editkaro</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h1>Our Portfolio</h1>
+        <p>Discover Our Projects in Diverse Categories</p>
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-categories">
+            <button class="filter-btn" data-category="short">Short-Clips</button>
+            <button class="filter-btn" data-category="gaming">Gaming Videos</button>
+            <button class="filter-btn" data-category="anime">Anime</button>
+            <button class="filter-btn" data-category="football">MMA</button>
+        </div>
+
+        <!-- Portfolio Items -->
+        <div class="portfolio-items">
+            <div class="portfolio-item" data-category="short">
+                <video class="portfolio-video" src="videos/shortvideo.mp4" controls></video>
+                <h3>Short</h3>
+            </div>
+            <div class="portfolio-item" data-category="gaming">
+                <video class="portfolio-video" src="videos/gaming.mp4" controls></video>
+                <h3>Gaming Video </h3>
+            </div>
+            <div class="portfolio-item" data-category="anime">
+                <video class="portfolio-video" src="videos/animevideo.mp4" controls></video>
+                <h3>Anime</h3>
+            </div>
+            <div class="portfolio-item" data-category="football">
+                <video class="portfolio-video" src="videos/MMA.mp4" controls></video>
+                <h3>MMA</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in - All Rights Reserved</p>
+        <div class="social-links">
+            <a href="mailto:youremail@example.com" target="_blank" aria-label="Email">
+                <span class="material-icons">email</span>
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                <span class="material-icons">instagram</span>
+            </a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                <span class="material-icons">facebook</span>
+            </a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
